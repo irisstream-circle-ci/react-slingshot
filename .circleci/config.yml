@@ -8,7 +8,6 @@ commands:
       - checkout
       - restore_cache:
           key: "npm-packages"
-      - run: npm install
 jobs:
   build:
     <<: *default_container
