@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - save_cache:
           paths:
-            - "/src/node_modules"
+            - "~/project/node_modules"
           key: "npm-packages"
       - run: npm run lint 
   test:
