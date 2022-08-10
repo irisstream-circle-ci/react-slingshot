@@ -11,7 +11,7 @@ commands:
       - run: npm install
 jobs:
   build:
-    <<: &default_container
+    <<: *default_container
     steps:
       - checkout
       - run: npm install
