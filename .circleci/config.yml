@@ -17,7 +17,7 @@ jobs:
       - run: npm install
       - save_cache:
           paths:
-            - "~/project/node_modules"
+            - "/home/circleci/project/node_modules"
           key: "npm-packages"
       - run: npm run lint 
   test:
